@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.core.splashscreen)
     implementation(libs.material)
+    implementation(libs.recyclerview)
     implementation(libs.volley)
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
