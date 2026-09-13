@@ -1,5 +1,8 @@
 package com.example.storeperu;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Producto {
 
     private int id;
@@ -20,6 +23,23 @@ public class Producto {
         this.garantia = garantia;
         this.precio = precio;
         this.stock = stock;
+    }
+
+    public JSONObject toJSON() {
+        JSONObject json = new JSONObject();
+
+        try {
+            json.put("nombre", nombre);
+            json.put("categoria", categoria);
+            json.put("descripcion", descripcion);
+            json.put("garantia", garantia);
+            json.put("precio", precio);
+            json.put("stock", stock);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return json;
     }
 
     public int getId() {
