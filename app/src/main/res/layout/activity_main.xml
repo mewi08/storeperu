@@ -38,6 +38,7 @@
     <Button
         android:id="@+id/btnLogin"
         android:text="Iniciar sesión"
+        android:backgroundTint="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
