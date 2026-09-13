@@ -12,4 +12,20 @@
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="postSplashScreenTheme">@style/Theme.StorePeru</item>
     </style>
+
+    <style name="buttonDanger" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/danger</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="buttonPrimary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="buttonInfo" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/info</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
 </resources>
