@@ -42,6 +42,24 @@ public class Producto {
         return json;
     }
 
+    public static Producto fromJSON(JSONObject json) {
+        Producto producto = new Producto();
+
+        try {
+            producto.setId(json.getInt("id"));
+            producto.setNombre(json.getString("nombre"));
+            producto.setCategoria(json.getString("categoria"));
+            producto.setDescripcion(json.getString("descripcion"));
+            producto.setGarantia(json.getInt("garantia"));
+            producto.setPrecio(json.getDouble("precio"));
+            producto.setStock(json.getInt("stock"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return producto;
+    }
+
     public int getId() {
         return id;
     }
