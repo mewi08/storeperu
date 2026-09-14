@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(user.equals("admin") && password.equals("123")){
             resetUI();
-            Intent intent = new Intent(getApplicationContext(), Menu.class);
+            Intent intent = new Intent(getApplicationContext(), Indice.class);
             startActivity(intent);
         }else{
             Toast.makeText(getApplicationContext(), "Credenciales invalidas", Toast.LENGTH_LONG).show();

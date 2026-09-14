@@ -8,6 +8,46 @@
     android:padding="30dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".Indice">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Store Perú"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_marginBottom="30dp"/>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnListarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Listar"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primary"/>
+
+    <Button
+        android:id="@+id/btnBuscarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Buscar"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primary"/>
+
+    <Button
+        android:id="@+id/btnRegistrarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Registrar"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primary"/>
 
   </LinearLayout>
+
+</LinearLayout>
