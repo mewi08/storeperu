@@ -46,8 +46,8 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
         public void asignarDatos(Producto producto){
             txtNombre.setText(producto.getNombre());
             txtDescripcion.setText(producto.getDescripcion());
-            txtPrecio.setText(String.valueOf("Precio: S/" + producto.getPrecio()));
-            txtStock.setText(String.valueOf("Stock: " + producto.getStock()));
+            txtPrecio.setText("Precio: S/" + producto.getPrecio());
+            txtStock.setText("Stock: " + producto.getStock());
         }
     }
 }
